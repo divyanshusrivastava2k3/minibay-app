@@ -1,0 +1,172 @@
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.topBar {
+    background: var(--foreground);
+    color: var(--background);
+    height: var(--top-bar-height);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.topBarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+.navMain {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navItem {
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.navItem::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--foreground);
+    transition: var(--transition);
+}
+
+.navItem:hover::after {
+    width: 100%;
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.userSection {
+    position: relative;
+}
+
+.userMenu {
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: 0;
+    min-width: 220px;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-100);
+    padding: 0.75rem 0;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuHeader {
+    padding: 0.5rem 1rem 0.75rem;
+}
+
+.menuName {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--foreground);
+}
+
+.menuEmail {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+}
+
+.menuDivider {
+    height: 1px;
+    background: var(--gray-100);
+    margin: 0.5rem 0;
+}
+
+.menuItem {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    transition: var(--transition);
+}
+
+.menuItem:hover {
+    background: var(--gray-50);
+    color: var(--foreground);
+}
+
+.menuItemLogout {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #dc2626;
+    text-align: left;
+    width: 100%;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.menuItemLogout:hover {
+    background: #fef2f2;
+}
+
+.iconBtn {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.iconBtn:hover {
+    transform: scale(1.1);
+}
+
+.cartCount {
+    background: var(--foreground);
+    color: var(--background);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+}

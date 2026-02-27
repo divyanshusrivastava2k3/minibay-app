@@ -1,0 +1,217 @@
+.container {
+    padding: 2rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.header p {
+    color: var(--gray-500);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.statCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--gray-100);
+}
+
+.statIcon {
+    width: 48px;
+    height: 48px;
+    background: #f0f9ff;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.statInfo h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.statInfo p {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+}
+
+.actionsBar {
+    margin-bottom: 1.5rem;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--gray-200);
+    width: 100%;
+    max-width: 400px;
+}
+
+.searchBox input {
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.tableWrapper {
+    background: white;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-100);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th {
+    padding: 1rem 1.5rem;
+    background: var(--gray-50);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.table td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: middle;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--gray-100);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--gray-700);
+}
+
+.userName {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.userEmail {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+}
+
+.roleUser {
+    padding: 4px 10px;
+    background: #f1f5f9;
+    color: #475569;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.roleAdmin {
+    padding: 4px 10px;
+    background: #fef2f2;
+    color: #dc2626;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.dateInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.viewBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    background: var(--gray-50);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.viewBtn:hover {
+    background: var(--gray-100);
+}
+
+.empty {
+    padding: 4rem;
+    text-align: center;
+    color: var(--gray-400);
+}
+.statusBadge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.statusprocessing {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.statusshipped {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.statusdelivered {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.errorMessage {
+    padding: 2rem;
+    text-align: center;
+    color: #dc2626;
+}

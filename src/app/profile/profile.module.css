@@ -1,0 +1,285 @@
+.container {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.profileCard {
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+.sidebar {
+    width: 280px;
+    border-right: 1px solid #f0f0f0;
+    background: #fdfdfd;
+}
+
+.userSummary {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.userName {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.menu {
+    padding: 0;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2rem;
+    color: #666;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    border-bottom: 1px solid #f9f9f9;
+    width: 100%;
+    text-align: left;
+}
+
+.menuItem:hover {
+    background: #f7f7f7;
+    color: #000;
+}
+
+.activeMenu {
+    background: #f7f7f7;
+    color: #000;
+    font-weight: 600;
+}
+
+.menuIcon {
+    opacity: 0.5;
+}
+
+.contentArea {
+    flex: 1;
+    padding: 3rem 4rem;
+}
+
+.dashboardGreeting {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.dashboardGreeting strong {
+    color: #000;
+}
+
+.logoutLink {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.description p {
+    margin-bottom: 1rem;
+}
+
+/* Forms and Inputs */
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.saveBtn {
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: opacity 0.2s;
+}
+
+.saveBtn:hover {
+    opacity: 0.8;
+}
+
+.saveBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Tables */
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.table th {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+    color: #666;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #f9f9f9;
+    color: #333;
+}
+
+.statusBadge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.statuspending {
+    background: #fffbeb;
+    color: #92400e;
+}
+
+.statusprocessing {
+    background: #eff6ff;
+    color: #1e40af;
+}
+
+.statusshipped {
+    background: #f5f3ff;
+    color: #5b21b6;
+}
+
+.statusdelivered {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.viewOrderLink {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+/* Addresses Section */
+.addressGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.addressBox {
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.addressBox h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.infoText {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.successMessage {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.errorMessage {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .profileCard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .contentArea {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .addressGrid {
+        grid-template-columns: 1fr;
+    }
+}

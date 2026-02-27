@@ -1,0 +1,109 @@
+.authPage {
+    min-height: 100vh;
+    background: #fdfdfd;
+}
+
+.authContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+}
+
+.authBox {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--foreground);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    color: var(--gray-500);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+}
+
+.form {
+    text-align: left;
+}
+
+.error {
+    background: #fff1f2;
+    color: #e11d48;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    border: 1px solid #ffe4e6;
+}
+
+.inputGroup {
+    margin-bottom: 1.25rem;
+}
+
+.inputGroup label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gray-600);
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+}
+
+.inputGroup input:focus {
+    border-color: var(--foreground);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03);
+}
+
+.switchText {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--gray-500);
+}
+
+.switchText a {
+    color: var(--foreground);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.switchText a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .authBox {
+        padding: 2rem 1.5rem;
+        box-shadow: none;
+        border: 1px solid var(--gray-100);
+    }
+}

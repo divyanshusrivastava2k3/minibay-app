@@ -1,0 +1,80 @@
+.reviews {
+    background: var(--gray-50);
+}
+
+.reviewGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.reviewCard {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviewRating {
+    color: #fbbf24;
+    font-size: 1.1rem;
+}
+
+.reviewTitle {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.reviewText {
+    font-size: 0.95rem;
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+.reviewFooter {
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+}
+
+.pageBtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.pageBtn.active {
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+}
+
+.pageBtn:hover:not(.active) {
+    background: var(--gray-100);
+}
